@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gursewak.comfortfood1.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/burger"
+        android:scaleType="centerCrop"
+
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+        android:text="SIGN UP"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/image_view"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image_view"
+        android:background="#fff"
+       android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_text"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/usr"
+            android:background="#c90404"
+            android:padding="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e-mail"
+            android:textColorHint="#5e5d5d"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linear_text"
+        android:background="#fff"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line"
+
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/key"
+            android:background="#c90404"
+            android:padding="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="set password"
+            android:textColorHint="#5e5d5d"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/line"
+        android:background="#fff"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_view"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/lock"
+            android:background="#c90404"
+            android:padding="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="confirm password"
+            android:textColorHint="#5e5d5d"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:weightSum="2"
+           android:background="#fff"
+           android:layout_below="@id/text_view"
+           android:layout_margin="15dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="for ngo"
+            android:textColor="#000"
+            android:background="#9e9898"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="for user"
+            android:textColor="#000"
+            android:background="#9e9898"
+            android:layout_margin="5dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
